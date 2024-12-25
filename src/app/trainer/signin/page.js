@@ -91,7 +91,7 @@ const Signin = () => {
           </div>
           <Button text="Signin" />
           <p>
-            Don't have an Account ?{' '}
+            Do not have an Account ?{' '}
             <Link className={formstyles.authlink} href="/trainer/signup">
               Create Trainer Account
             </Link>

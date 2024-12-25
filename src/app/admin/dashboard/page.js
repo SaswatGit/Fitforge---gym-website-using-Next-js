@@ -35,7 +35,7 @@ const Dashboard = () => {
     <div className={dashboardstyles.dashboard}>
       <h1 className={`${dashboardstyles.heading} ${fontstyles.fontBold}`}>Admin <span className={`${dashboardstyles.imp} ${fontstyles.fontBold}`}>Dashboard</span></h1>
       <p className={dashboardstyles.description}>
-        Welcome to the admin dashboard! Here, you can manage your gym's operations, members, and more. Get started by clicking on any of the buttons below.
+        Welcome to the admin dashboard! Here, you can manage your gym&apos;s operations, members, and more. Get started by clicking on any of the buttons below.
       </p>
 
       <div className={dashboardstyles.con}>

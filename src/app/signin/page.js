@@ -89,7 +89,7 @@ const Signin = () => {
           </div>
           <Button text="Signin" />
           <p>
-            Don't have an Account ?{' '}
+            Don not have an Account ?{' '}
             <Link className={formstyles.authlink} href="/signup">
               Create Account
             </Link>
