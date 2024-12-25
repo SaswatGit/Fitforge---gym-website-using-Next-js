@@ -1,0 +1,80 @@
+.imp{
+    color: var(--cta);
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--dark-1);
+    color: var(--light-1);
+}
+
+
+
+.hero .text{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .text h1{
+    font-size: clamp(3rem, 5vw, 8rem);
+    line-height: 70px;
+    margin-bottom: 1rem;
+}
+
+.hero .text p{
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: var(--light-2);
+    margin-bottom: 1rem;
+}
+
+.hero .img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90vh;
+    position: relative;
+}
+
+.hero .img .imgEle{
+    overflow: visible;
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1030px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .text{
+        text-align: center;
+        align-items: center;
+        width: 60%;
+        padding: 4rem 0;
+    }
+
+    .hero .text h1{
+        line-height: 50px;
+    }
+
+    .hero .img{
+        height: auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero .text{
+        width: 100%;
+    }
+}
+

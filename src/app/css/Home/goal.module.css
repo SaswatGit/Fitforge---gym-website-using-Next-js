@@ -1,0 +1,64 @@
+.imp {
+    color: var(--cta);
+}
+
+.goal {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--dark-1);
+    color: var(--light-1);
+}
+
+
+
+.goal .text {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.goal .text h2 {
+    font-size: clamp(2rem, 4vw, 6rem);
+    line-height: 60px;
+    margin-bottom: 1rem;
+}
+
+.goal .text p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: var(--light-2);
+    margin-bottom: 1rem;
+}
+
+.goal .img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.goal .img .imgEle {
+    overflow: visible;
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .goal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .goal .text h2 {
+        line-height: 40px;
+    }
+
+    .goal .img {
+        height: 30vh;
+        justify-content: center;
+    }
+}

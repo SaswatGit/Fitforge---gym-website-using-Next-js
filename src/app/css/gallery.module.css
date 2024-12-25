@@ -1,0 +1,41 @@
+.imp{
+    color: var(--cta);
+}
+
+.gallery{
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery h2{
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-bottom: 2rem;
+}
+
+.gallery .galleryContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery .galleryContainer .galleryItem{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .gallery .galleryContainer .galleryItem{
+        width: 100%;
+    }
+}
+
+.gallery .galleryContainer .galleryItem .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

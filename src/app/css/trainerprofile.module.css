@@ -1,0 +1,177 @@
+.imp {
+    color: var(--cta);
+}
+
+.userProfile {
+    width: 100%;
+    padding: 4rem 2rem;
+    color: var(--light-2);
+}
+
+@media screen and (max-width: 850px) {
+    .userProfile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.info .pic,
+.info .bio,
+.info .clients {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(38, 38, 38);
+    padding: 1rem;
+}
+
+.info .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100%;
+    border-bottom: 5px solid var(--cta);
+}
+
+
+
+.info .pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 5px solid var(--cta);
+}
+
+.info .bio {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info .clients .clientItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 98%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid rgb(68, 68, 68);
+}
+
+.info .plan,
+.info .trainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .info .pic,
+    .info .bio,
+    .info .plan,
+    .info .trainer {
+        height: auto;
+    }
+}
+
+
+
+
+.info .bio {
+    border-bottom: 5px solid var(--light-1);
+}
+
+
+
+.pic .profilePicContainer {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.pic .profilePicContainer .profilePic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pic .profilePicContainer .uploadIcon {
+    color: var(--cta);
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.info .icon {
+    width: 100px;
+    height: auto;
+    color: var(--cta);
+}
+
+.info p {
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    color: var(--light-2);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.info .editLink {
+    color: var(--cta);
+    font-size: 0.8rem;
+}
+
+.info p .dataicon {
+    margin-top: 4px;
+    color: var(--cta);
+}
+
+
+.info .plan {
+    border-bottom: 5px solid var(--light-1);
+}
+
+.info .trainer {
+    border-bottom: 5px solid var(--cta);
+}
+
+.info h3 {
+    font-size: clamp(2rem, 2vw, 3rem);
+    margin-bottom: 1rem;
+    color: var(--light-1);
+}
+
+@media screen and (max-width: 800px) {
+    .info {
+        gap: 1rem;
+    }
+
+    .info .pic {
+        flex-direction: column;
+    }
+
+    .info .pic .profilePicContainer {
+        margin-top: 1rem;
+    }
+}

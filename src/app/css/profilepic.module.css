@@ -1,0 +1,47 @@
+.profilepicSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+}
+
+.profilepicSection .profilePicContainer {
+    overflow: hidden;
+}
+
+.profilepicSection .profilePicContainer .profilePic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profilepicSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilepicSection form input[type=file] {
+    display: none;
+}
+
+.profilepicSection .uploadLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.profilepicSection .uploadLabel span {
+    color: var(--cta);
+    font-size: 0.8rem;
+}
+
+.profilepicSection form .uploadIcon {
+    color: var(--cta);
+    font-size: 3rem;
+}

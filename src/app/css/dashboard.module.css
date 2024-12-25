@@ -1,0 +1,77 @@
+.imp {
+    color: var(--cta);
+}
+
+.dashboard {
+    color: var(--light-1);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.dashboard .heading {
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-bottom: 2rem;
+}
+
+.dashboard .description {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin-bottom: 2rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dashboard .con {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 3rem 2rem;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .dashboard .con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.dashboard .con .users,
+.dashboard .con .trainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.dashboard .con .users .user,
+.dashboard .con .trainers .trainer {
+    display: flex;
+    background-color: var(--dark-2);
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.dashboard .con .users .user .link,
+.dashboard .con .trainers .trainer .link {
+    color: var(--cta);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 850px) {
+    .dashboard {
+        padding: 3rem 0.5rem;
+    }
+
+    .dashboard .description {
+        width: 95%;
+    }
+
+
+}

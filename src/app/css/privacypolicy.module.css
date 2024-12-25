@@ -1,0 +1,44 @@
+.privacyPolicy {
+    padding: 2rem;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: var(--light-2);
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .effectiveDate {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cta);
+  }
+  
+  .section ul {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+  }
+  
+  .section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .section p {
+    margin-bottom: 1rem;
+  }
+  

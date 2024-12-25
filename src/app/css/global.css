@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+html, body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-color: var(--dark-1);
+}
+
+:root{
+    --dark-1: rgb(26, 25, 25);
+    --dark-2: rgb(53, 52, 52);
+    --light-1: rgb(238, 238, 238);
+    --light-2: rgb(177, 177, 177);
+    --cta: rgb(252, 94, 36);
+    --cta-h: rgb(247, 116, 68);
+}

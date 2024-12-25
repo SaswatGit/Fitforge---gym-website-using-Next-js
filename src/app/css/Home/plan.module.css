@@ -1,0 +1,55 @@
+.imp {
+    color: var(--cta);
+}
+
+.pricingSection {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--dark-1);
+    color: var(--light-2);
+}
+
+.heading {
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-bottom: 0.5rem;
+    color: var(--light-1);
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--dark-2);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--light-1);
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
