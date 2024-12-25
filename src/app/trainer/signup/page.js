@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import formstyles from '../../css/formpage.module.css';
 import fontstyles from '../../css/fonts.module.css';
 import Link from 'next/link';
@@ -10,11 +10,11 @@ import Button from '../../components/button';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 
-const signup = () => {
+const Signup = () => {
   const router = useRouter();
-    const [trainer, setTrainer] = useState(null);
+  const [trainer, setTrainer] = useState(null);
 
-  const handleChange = (e)=>{
+  const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
 
@@ -24,10 +24,10 @@ const signup = () => {
     });
   }
 
-  const handleSubmit= async(e)=>{
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await axios.post('http://localhost:3000/api/trainer', trainer);
-    if(response.data.success){
+    if (response.data.success) {
       Swal.fire({
         title: 'Success',
         text: response.data.message,
@@ -37,7 +37,7 @@ const signup = () => {
       }).then(() => {
         router.push('/trainer/signin');
       })
-    }else{
+    } else {
       Swal.fire({
         title: 'Error',
         text: response.data.message,
@@ -47,7 +47,7 @@ const signup = () => {
       })
     }
   }
-  
+
 
   return (
     <section className={formstyles.formpage}>
@@ -156,4 +156,4 @@ const signup = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(signup), { ssr: false });
+export default dynamic(() => Promise.resolve(Signup), { ssr: false });

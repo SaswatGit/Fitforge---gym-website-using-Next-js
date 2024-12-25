@@ -17,7 +17,7 @@ import { FaEdit } from "react-icons/fa";
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-const userprofile = () => {
+const UserProfile = () => {
     const { uid } = useParams();
     const [user, setUser] = useState({});
     const [userPic, setUserPic] = useState({});
@@ -95,4 +95,4 @@ const userprofile = () => {
     );
 };
 
-export default userprofile;
+export default UserProfile;

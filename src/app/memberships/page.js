@@ -4,7 +4,7 @@ import planstyles from '../css/plan.module.css'
 import fontstyles from '../css/fonts.module.css'
 import Link from 'next/link'
 
-const memberships = () => {
+const Memberships = () => {
   return (
     <section className={planstyles.pricingSection}>
       <h2 className={`${planstyles.heading} ${fontstyles.fontBold}`}>Choose Your <span className={`${planstyles.imp} ${fontstyles.fontBold}`}>Plan</span></h2>
@@ -41,4 +41,4 @@ const memberships = () => {
   )
 }
 
-export default memberships
+export default Memberships

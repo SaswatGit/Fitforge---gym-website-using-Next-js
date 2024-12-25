@@ -17,7 +17,7 @@ import { MdOutlineSportsGymnastics } from "react-icons/md";
 import { MdPersonalInjury } from "react-icons/md";
 import Link from 'next/link'
 
-const home = () => {
+const Home = () => {
   return (
     <main className={homestyles.home}>
       <section className={herostyles.hero}>
@@ -138,4 +138,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home

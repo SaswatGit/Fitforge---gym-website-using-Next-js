@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Button from '../components/button'
 import AboutImage from '../../../public/about-img.png'
 
-const about = () => {
+const About = () => {
   return (
     <section className={styles.aboutSection}>
       <div className={styles.textContainer}>
@@ -26,4 +26,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

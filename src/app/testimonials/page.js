@@ -2,7 +2,7 @@ import React from 'react';
 import testimonialStyles from '../css/testimonial.module.css';
 import fontstyles from '../css/fonts.module.css';
 
-const testimonials = () => {
+const Testimonials = () => {
   return (
     <section className={testimonialStyles.testimonialSection}>
       <h2 className={testimonialStyles.heading}>
@@ -52,4 +52,4 @@ const testimonials = () => {
   );
 };
 
-export default testimonials;
+export default Testimonials;

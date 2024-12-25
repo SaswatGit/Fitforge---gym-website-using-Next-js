@@ -4,13 +4,13 @@ import fontstyles from '../css/fonts.module.css'
 import Button from '../components/button'
 import Link from 'next/link'
 
-const gallerypost = () => {
+const GalleryPost = () => {
   return (
     <section className={formstyles.formpage}>
       <div className={formstyles.container}>
         <h2 className={`${formstyles.heading} ${fontstyles.fontBold}`}>Gallery Image <span className={`${fontstyles.fontBold} ${formstyles.imp}`}>Post</span></h2>
         <p className={formstyles.subText}>
-        Upload Gallery Image Here
+          Upload Gallery Image Here
         </p>
         <form className={formstyles.form}>
           <div className={formstyles.formGroup}>
@@ -30,4 +30,4 @@ const gallerypost = () => {
   )
 }
 
-export default gallerypost
+export default GalleryPost

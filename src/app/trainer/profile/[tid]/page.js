@@ -19,7 +19,7 @@ import { FaEdit } from "react-icons/fa";
 import { useParams } from 'next/navigation';
 import axios from 'axios'
 
-const userprofile = () => {
+const Userprofile = () => {
     const { tid } = useParams();
     const [trainer, setTrainer] = useState({});
     const [trainerPic, setTrainerPic] = useState({});
@@ -81,4 +81,4 @@ const userprofile = () => {
     )
 }
 
-export default userprofile
+export default Userprofile

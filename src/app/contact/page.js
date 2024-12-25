@@ -3,7 +3,7 @@ import formstyles from '../css/formpage.module.css'
 import fontstyles from '../css/fonts.module.css'
 import Button from '../components/button'
 
-const contact = () => {
+const Contact = () => {
   return (
     <section className={formstyles.formpage}>
       <div className={formstyles.container}>
@@ -52,4 +52,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact

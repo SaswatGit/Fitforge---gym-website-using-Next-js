@@ -10,7 +10,7 @@ import Button from '../components/button';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
 
-const signup = () => {
+const Signup = () => {
   const router = useRouter();
   const [user, setUser] = useState(null);
 
@@ -156,4 +156,4 @@ const signup = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(signup), { ssr: false });
+export default dynamic(() => Promise.resolve(Signup), { ssr: false });

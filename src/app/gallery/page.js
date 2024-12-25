@@ -14,7 +14,7 @@ import Img10 from '../../../public/gallery/img-10.jpg'
 import Img11 from '../../../public/gallery/img-11.jpg'
 import Image from 'next/image'
 
-const gallery = () => {
+const Gallery = () => {
   return (
     <section className={gallerystyles.gallery}>
       <h2 className={`${gallerystyles.imp} ${fontstyles.fontBold}`}>Gallery</h2>
@@ -57,4 +57,4 @@ const gallery = () => {
   )
 }
 
-export default gallery
+export default Gallery

@@ -1,7 +1,7 @@
 import React from 'react'
 import privacyStyles from '../css/privacypolicy.module.css';
 
-const privacyPolicy = () => {
+const PrivacyPolicy = () => {
   return (
     <section className={privacyStyles.privacyPolicy}>
       <h1 className={privacyStyles.heading}>Privacy Policy</h1>
@@ -56,4 +56,4 @@ const privacyPolicy = () => {
   )
 }
 
-export default privacyPolicy
+export default PrivacyPolicy
