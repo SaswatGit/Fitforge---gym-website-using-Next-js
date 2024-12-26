@@ -27,6 +27,7 @@ const AddProfilePic = () => {
         formData.append("profilePicInput", e.target.profilePicInput.files[0]);
         try {
             const response = await axios.post(`https://fitforge-gym-website-using-next-js.onrender.com/api/user/uploadpic/${uid}`, formData);
+            console.log(response.data);
             if (response.data.success) {
                 Swal.fire({
                     icon: 'success',

@@ -21,7 +21,7 @@ const Dashboard = () => {
     getUsers();
     const getTrainers = async () => {
       try {
-        const response = await axios.get(`${process.env.ROOT_URL}/api/trainer/`);
+        const response = await axios.get(`https://fitforge-gym-website-using-next-js.onrender.com/api/trainer/`);
         setTrainers(response.data.trainers);
       } catch (error) {
         console.log(error);

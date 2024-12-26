@@ -28,7 +28,7 @@ export async function PUT(request, { params }) {
         const filter = { _id: uid };
         const updateDocument = { name, email, mobile_no, password: hashPassword, bio };
         await User.findOneAndUpdate(filter, updateDocument);
-        return NextResponse.json({ message: "Profile Updated. Login again using your updated email and password.", success: true });
+        return NextResponse.json({ message: "Profile Updated. Login again.", success: true });
     } catch (error) {
         return NextResponse.json({ message: error._message, success: false });
     }

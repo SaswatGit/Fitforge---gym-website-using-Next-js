@@ -84,13 +84,6 @@ const UserProfile = () => {
                     <p>{user.bio}</p>
                 </div>
             </div>
-            <div className={userprofilestyles.info}>
-                <div className={userprofilestyles.plan}>
-                    <FaMoneyBill className={userprofilestyles.icon} />
-                    <p>Active Plan</p>
-                    <h3 className={fontstyles.fontBold}>Pro</h3>
-                </div>
-            </div>
         </section>
     );
 };
