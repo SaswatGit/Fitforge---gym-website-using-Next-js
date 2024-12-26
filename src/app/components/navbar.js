@@ -30,7 +30,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const getUser = async () => {
-      const response = await axios.get(`${process.env.ROOT_URL}/api/user/${userId}`);
+      const response = await axios.get(`https://fitforge-gym-website-using-next-js.onrender.com/api/user/${userId}`);
       if (response.data.userPic) {
         setUserProfilePic(response.data.userPic[0].pic);
       }
