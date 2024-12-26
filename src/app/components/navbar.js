@@ -30,7 +30,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const getUser = async () => {
-      const response = await axios.get(`http://localhost:3000/api/user/${userId}`);
+      const response = await axios.get(`${process.env.ROOT_URL}/api/user/${userId}`);
       if (response.data.userPic) {
         setUserProfilePic(response.data.userPic[0].pic);
       }
@@ -38,7 +38,7 @@ const Navbar = () => {
     getUser();
 
     const getTrainer = async () => {
-      const response = await axios.get(`http://localhost:3000/api/trainer/${trainerId}`);
+      const response = await axios.get(`${process.env.ROOT_URL}/api/trainer/${trainerId}`);
       if (response.data.trainerPic) {
         setTrainerProfilePic(response.data.trainerPic[0].pic);
       }

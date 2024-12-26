@@ -19,7 +19,7 @@ const EditProfile = () => {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/user/${uid}`);
+                const response = await axios.get(`${process.env.ROOT_URL}/api/user/${uid}`);
                 setUser(response.data.user[0]);
             } catch (error) {
                 console.log(error);

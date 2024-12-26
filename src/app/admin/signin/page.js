@@ -23,7 +23,7 @@ const Signin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.post('http://localhost:3000/api/admin', admin);
+    const response = await axios.post(`${process.env.ROOT_URL}/api/admin`, admin);
     if (response.data.success) {
       Swal.fire({
         title: 'Success',

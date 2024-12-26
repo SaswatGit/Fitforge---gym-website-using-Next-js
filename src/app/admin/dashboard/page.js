@@ -12,7 +12,7 @@ const Dashboard = () => {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/user/`);
+        const response = await axios.get(`${process.env.ROOT_URL}/api/user/`);
         setUsers(response.data.users);
       } catch (error) {
         console.log(error);
@@ -21,7 +21,7 @@ const Dashboard = () => {
     getUsers();
     const getTrainers = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/trainer/`);
+        const response = await axios.get(`${process.env.ROOT_URL}/api/trainer/`);
         setTrainers(response.data.trainers);
       } catch (error) {
         console.log(error);

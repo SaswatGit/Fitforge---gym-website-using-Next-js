@@ -26,7 +26,7 @@ const UserProfile = () => {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/api/user/${uid}`);
+                const response = await axios.get(`${process.env.ROOT_URL}/api/user/${uid}`);
                 setUser(response.data.user[0]);
                 setUserPic(response.data.userPic[0]);
             } catch (error) {

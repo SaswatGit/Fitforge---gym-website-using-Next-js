@@ -27,7 +27,7 @@ const Signin = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(trainer)
-    const response = await axios.post('http://localhost:3000/api/trainer/signin', trainer);
+    const response = await axios.post(`${process.env.ROOT_URL}/api/trainer/signin`, trainer);
     if (response.data.success) {
       Swal.fire({
         title: 'Success',
