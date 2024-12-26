@@ -38,7 +38,7 @@ const Navbar = () => {
     getUser();
 
     const getTrainer = async () => {
-      const response = await axios.get(`${process.env.ROOT_URL}/api/trainer/${trainerId}`);
+      const response = await axios.get(`https://fitforge-gym-website-using-next-js.onrender.com/api/trainer/${trainerId}`);
       if (response.data.trainerPic) {
         setTrainerProfilePic(response.data.trainerPic[0].pic);
       }

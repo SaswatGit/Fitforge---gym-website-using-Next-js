@@ -26,7 +26,7 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.post(`${process.env.ROOT_URL}/api/user`, user);
+    const response = await axios.post(`https://fitforge-gym-website-using-next-js.onrender.com/api/user`, user);
     console.log(response.data);
     if (response.data.success) {
       Swal.fire({

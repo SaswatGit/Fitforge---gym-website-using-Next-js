@@ -19,7 +19,7 @@ const EditProfile = () => {
     useEffect(() => {
         const getTrainer = async () => {
             try {
-                const response = await axios.get(`${process.env.ROOT_URL}/api/trainer/${tid}`);
+                const response = await axios.get(`https://fitforge-gym-website-using-next-js.onrender.com/api/trainer/${tid}`);
                 setTrainer(response.data.trainer[0]);
             } catch (error) {
                 console.log(error);
@@ -41,7 +41,7 @@ const EditProfile = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await axios.put(`http://localhost:3000/api/trainer/${tid}`, trainer);
+        const response = await axios.put(`https://fitforge-gym-website-using-next-js.onrender.com/api/trainer/${tid}`, trainer);
         console.log(response.data);
         if (response.data.success) {
             Swal.fire({

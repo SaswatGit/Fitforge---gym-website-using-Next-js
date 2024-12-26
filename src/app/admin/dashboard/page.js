@@ -12,7 +12,7 @@ const Dashboard = () => {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const response = await axios.get(`${process.env.ROOT_URL}/api/user/`);
+        const response = await axios.get(`https://fitforge-gym-website-using-next-js.onrender.com/api/user/`);
         setUsers(response.data.users);
       } catch (error) {
         console.log(error);

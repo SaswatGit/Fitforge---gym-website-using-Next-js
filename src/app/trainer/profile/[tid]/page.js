@@ -31,7 +31,7 @@ const Userprofile = () => {
     useEffect(() => {
         const getTrainer = async () => {
             try {
-                const response = await axios.get(`${process.env.ROOT_URL}/api/trainer/${tid}`);
+                const response = await axios.get(`https://fitforge-gym-website-using-next-js.onrender.com/api/trainer/${tid}`);
                 setTrainer(response.data.trainer[0]);
                 setTrainerPic(response.data.trainerPic[0]);
             } catch (error) {
