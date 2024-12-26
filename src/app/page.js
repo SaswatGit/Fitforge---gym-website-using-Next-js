@@ -66,7 +66,7 @@ const Home = () => {
         </div>
         <div className={goalstyles.text}>
           <h2 className={fontstyles.fontBold}>Achieve Your <span className={`${herostyles.imp} ${fontstyles.fontBold}`}>Fitness Goals</span> with Us</h2>
-          <p>Whether you're aiming to build strength, improve endurance, or enhance flexibility, our personalized programs and supportive community are here to help you succeed every step of the way.</p>
+          <p>Whether you&apos;re aiming to build strength, improve endurance, or enhance flexibility, our personalized programs and supportive community are here to help you succeed every step of the way.</p>
           <Link href='/contact'>
             <Button text="Start Today" />
           </Link>
