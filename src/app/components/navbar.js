@@ -94,7 +94,7 @@ const Navbar = () => {
         }
 
 
-        {userId && <li>
+        {!adminId && <li>
           <Link href="/memberships">Membership Plans</Link>
         </li>}
         {
