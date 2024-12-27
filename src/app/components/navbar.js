@@ -105,7 +105,9 @@ const Navbar = () => {
 
         {userId && <li>
           <Link href={`/user-profile/${userId}`}>
-            <Image src={userProfilePic ? `/uploads/${userProfilePic}` : ProfilePic} className={styles.profilePic} alt='Profile Image' width={40} height={40} />
+            {/* <Image src={userProfilePic ? `/uploads/${userProfilePic}` : ProfilePic} className={styles.profilePic} alt='Profile Image' width={40} height={40} />
+             */}
+            Profile
           </Link>
         </li>}
 
@@ -119,7 +121,8 @@ const Navbar = () => {
 
         {trainerId && <li>
           <Link href={`/trainer/profile/${trainerId}`}>
-            <Image src={`/uploads/${trainerProfilePic}`} className={styles.profilePic} alt='Profile Image' width={40} height={40} />
+            {/* <Image src={`/uploads/${trainerProfilePic}`} className={styles.profilePic} alt='Profile Image' width={40} height={40} /> */}
+            Profile
           </Link>
         </li>}
         {

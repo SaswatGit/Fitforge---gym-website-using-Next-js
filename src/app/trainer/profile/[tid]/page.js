@@ -47,6 +47,13 @@ const Userprofile = () => {
                     <div className={userprofilestyles.profilePicContainer}>
 
                         <Image
+                            src={ProfilePic}
+                            alt="Profile Picture"
+                            className={userprofilestyles.profilePic}
+                            width={200}
+                            height={200}
+                        />
+                        {/* <Image
                             src={trainerPic ? `/uploads/${trainerPic.pic}` : ProfilePic}
                             alt="Profile Picture"
                             className={userprofilestyles.profilePic}
@@ -59,7 +66,7 @@ const Userprofile = () => {
                             ) : (
                                 <Link href={`/trainer/edit-profile-pic/${tid}`}> <FaEdit className={userprofilestyles.uploadIcon} /></Link>
                             )
-                        }
+                        } */}
 
 
                     </div>

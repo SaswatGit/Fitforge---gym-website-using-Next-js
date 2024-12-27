@@ -48,20 +48,27 @@ const UserProfile = () => {
 
 
                         <Image
-                            src={userPic ? `/uploads/${userPic.pic}` : ProfilePic}
+                            src={ProfilePic}
                             alt="Profile Picture"
                             className={userprofilestyles.profilePic}
                             width={200}
                             height={200}
                         />
+                        {/* <Image
+                            src={userPic ? `/uploads/${userPic.pic}` : ProfilePic}
+                            alt="Profile Picture"
+                            className={userprofilestyles.profilePic}
+                            width={200}
+                            height={200}
+                        /> */}
 
-                        {
+                        {/* {
                             !userPic ? (
                                 <Link href={`/add-profile-pic/${uid}`}> <MdCloudUpload className={userprofilestyles.uploadIcon} /></Link>
                             ) : (
                                 <Link href={`/edit-profile-pic/${uid}`}> <FaEdit className={userprofilestyles.uploadIcon} /></Link>
                             )
-                        }
+                        } */}
 
 
 
